@@ -23,9 +23,11 @@ public class OrderForm implements ActionListener {
         JButton button = new JButton("Order Now!"); // Order now button
 
         JLabel statusBar = new JLabel("OrderForm running...", SwingConstants.LEFT); // Creates Status Bar
-        statusBar.setBorder(BorderFactory.createEtchedBorder());
+       statusBar.setBorder(BorderFactory.createEtchedBorder());
         statusBar.setFont(new Font("Arial", Font.PLAIN, 12));
-        statusBar.setBackground(Color.LIGHT_GRAY);
+        statusBar.setOpaque(true);
+        statusBar.setBackground(Color.lightGray);
+        statusBar.setForeground(Color.black); 
 
         panel.add(welcome);
         panel.add(fries);
